@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Historia de la tecnología: línea de tiempo desde la prehistoria hasta la inteligencia artificial.">
+    <title>Historia · Tecnología y Sociedad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap"><a class="brand" href="index.html" aria-label="Tecnología y Sociedad, ir al inicio"><span
+                    class="logo" aria-hidden="true">🌍</span><span class="name">Tecnología y Sociedad</span></a>
+            <nav class="nav" aria-label="Apartados"><a href="historia.html" aria-current="page">Historia</a><a
+                    href="desarrollo.html">Desarrollo</a><a href="internet.html">Internet</a><a
+                    href="educacion.html">Educación</a><a href="comunicacion.html">Comunicación</a></nav>
+        </div>
+    </header>
+    <section class="hero hero-page"><svg class="wallpaper" viewBox="0 0 1440 700" preserveAspectRatio="xMaxYMid slice"
+            aria-hidden="true" focusable="false">
+            <defs>
+                <radialGradient id="hpg" cx="0.819" cy="0.429" r="0.55">
+                    <stop offset="0" stop-color="var(--hd-bg-2)" />
+                    <stop offset="1" stop-color="var(--hd-bg)" />
+                </radialGradient>
+                <pattern id="hpp" width="36" height="36" patternUnits="userSpaceOnUse">
+                    <circle cx="2" cy="2" r="1.2" fill="var(--hd-line)" opacity=".22" />
+                </pattern>
+                <linearGradient id="hpf" x1="0" x2="1">
+                    <stop offset="0" stop-color="var(--hd-bg)" stop-opacity=".92" />
+                    <stop offset=".55" stop-color="var(--hd-bg)" stop-opacity=".35" />
+                    <stop offset="1" stop-color="var(--hd-bg)" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            <rect width="1440" height="700" fill="url(#hpg)" />
+            <rect width="1440" height="700" fill="url(#hpp)" />
+            <circle cx="1180" cy="300" r="296" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                stroke-dasharray="3 9" opacity=".35" />
+            <circle cx="1180" cy="300" r="250" fill="none" stroke="var(--hd-line)" stroke-width="1.6" opacity=".6" />
+            <ellipse cx="1180" cy="300" rx="70.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300" rx="145.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300" rx="215.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <path d="M1180 50 V550" fill="none" stroke="var(--hd-line)" stroke-width="1" opacity=".3" />
+            <ellipse cx="1180" cy="83.5" rx="125.0" ry="17.5" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="175.0" rx="216.5" ry="30.3" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300.0" rx="250.0" ry="35.0" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="425.0" rx="216.5" ry="30.3" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="516.5" rx="125.0" ry="17.5" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <path d="M1220.3 325.7 Q1255.0 316.2 1238.9 295.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1220.3 325.7 Q1272.5 310.7 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1165.8 101.4 Q1164.7 77.8 1167.1 106.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1165.8 101.4 Q1152.4 67.1 1145.1 84.4" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1238.9 295.8 Q1281.9 290.2 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1186.3 457.7 Q1176.2 511.2 1167.1 512.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1186.3 457.7 Q1213.3 504.3 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1351.9 230.6 Q1344.7 259.1 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1351.9 230.6 Q1337.4 252.7 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1098.6 492.4 Q1087.9 530.7 1096.4 520.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1098.6 492.4 Q1062.7 496.2 1053.4 455.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1298.1 493.6 Q1275.4 520.4 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M963.4 198.4 Q930.3 235.0 947.5 284.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M963.4 198.4 Q990.2 163.1 1059.2 158.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1300.0 83.9 Q1310.1 59.0 1295.6 79.9" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1300.0 83.9 Q1307.9 64.5 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1253.1 218.3 Q1285.9 241.4 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1001.3 468.8 Q1009.6 481.0 1053.4 455.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1001.3 468.8 Q966.3 454.8 973.4 410.2" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M947.5 284.7 Q967.1 304.4 1038.6 323.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1167.1 512.6 Q1202.0 532.0 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1379.1 332.1 Q1358.9 318.8 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1273.1 289.7 Q1306.0 293.6 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1038.6 323.1 Q1007.9 370.0 1025.4 397.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1295.6 79.9 Q1305.4 62.3 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1279.3 132.1 Q1297.8 88.8 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1025.4 397.3 Q976.8 416.7 973.4 410.2" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1123.8 163.8 Q1115.2 122.2 1124.4 129.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1123.8 163.8 Q1077.6 139.1 1059.2 158.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1124.4 129.6 Q1140.9 92.3 1167.1 106.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1167.1 106.1 Q1153.1 69.4 1145.1 84.4" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <circle cx="1220.3" cy="325.7" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1220.3" cy="325.7" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1165.8" cy="101.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1238.9" cy="295.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1186.3" cy="457.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1351.9" cy="230.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1098.6" cy="492.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1298.1" cy="493.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="963.4" cy="198.4" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="963.4" cy="198.4" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1300.0" cy="83.9" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1253.1" cy="218.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1001.3" cy="468.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="947.5" cy="284.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1053.4" cy="455.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1167.1" cy="512.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1379.1" cy="332.1" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1379.1" cy="332.1" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1273.1" cy="289.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1287.0" cy="300.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1038.6" cy="323.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1295.6" cy="79.9" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1279.3" cy="132.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1025.4" cy="397.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="973.4" cy="410.2" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="973.4" cy="410.2" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1123.8" cy="163.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1124.4" cy="129.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1291.0" cy="90.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1096.4" cy="520.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1167.1" cy="106.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1145.1" cy="84.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1232.0" cy="499.5" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1232.0" cy="499.5" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1059.2" cy="158.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <rect width="1440" height="700" fill="url(#hpf)" />
+        </svg>
+        <div class="wrap">
+            <div class="copy">
+                <div class="eyebrow">Apartado · Historia</div>
+                <h1>Historia de la tecnología</h1>
+                <p class="lead">Un recorrido por los inventos y conocimientos técnicos que transformaron la vida humana,
+                    desde las primeras herramientas de piedra hasta la inteligencia artificial.</p>
+                <div class="chips"><a href="#linea">Línea de tiempo</a><a href="#revoluciones">Revoluciones
+                        industriales</a><a href="#moore">Ley de Moore</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="linea">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Línea de tiempo</span>
+                <h2>Del primer utensilio a la inteligencia artificial</h2>
+                <p>Cada etapa se apoyó en la anterior. La velocidad de los cambios aumentó: miles de años separan la
+                    piedra tallada de la agricultura; solo décadas separan la computadora personal del teléfono
+                    inteligente.</p>
+            </div>
+            <ol class="tl">
+                <li>
+                    <div class="when">≈ 3 millones a. C.<small>Prehistoria</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M9 31 L19 11 L36 15 L41 29 L28 40 Z" />
+                            <path d="M19 11 L22 26 L41 29 M22 26 L28 40" />
+                        </svg>
+                        <div>
+                            <h3>Las primeras herramientas de piedra</h3>
+                            <p>Los homininos tallaron piedras para cortar, raspar y golpear. Es la primera tecnología
+                                conocida y marcó el inicio de una relación entre cerebro, mano y herramienta que no se
+                                detuvo.</p>
+                            <p class="impact"><b>Impacto social:</b> Permitió acceder a nuevas fuentes de alimento y dio
+                                ventaja para sobrevivir.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">> 1 millón de años<small>Paleolítico</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M24 6 C28 14 38 18 36 30 C35 38 29 42 24 42 C18 42 12 38 12 30 C12 24 17 22 18 16 C21 19 22 12 24 6 Z" />
+                            <path
+                                d="M24 42 C20 42 18 38 20 34 C21 31 24 30 24 26 C28 29 30 33 29 37 C28 40 26 42 24 42" />
+                        </svg>
+                        <div>
+                            <h3>El control del fuego</h3>
+                            <p>Hay indicios de uso controlado del fuego desde hace más de un millón de años. Cocinar,
+                                calentarse y protegerse de los animales cambió la dieta y la vida en comunidad.</p>
+                            <p class="impact"><b>Impacto social:</b> Los grupos humanos se reunieron alrededor de la
+                                hoguera, lo que favoreció el lenguaje y la cooperación.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">≈ 10.000 a. C.<small>Neolítico</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="24" cy="24" r="16" />
+                            <circle cx="24" cy="24" r="4" />
+                            <path
+                                d="M24 8 V20 M24 28 V40 M8 24 H20 M28 24 H40 M13 13 L21 21 M27 27 L35 35 M35 13 L27 21 M21 27 L13 35" />
+                        </svg>
+                        <div>
+                            <h3>La agricultura y la vida sedentaria</h3>
+                            <p>En el Creciente Fértil, y más tarde en otras regiones, se domesticaron plantas y
+                                animales. Aparecieron la cerámica, el arado y los primeros poblados estables.</p>
+                            <p class="impact"><b>Impacto social:</b> Surgieron las aldeas, el excedente de alimentos, la
+                                propiedad y la división del trabajo.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">≈ 3500–3200 a. C.<small>Edad del Bronce</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="8" width="30" height="32" rx="3" />
+                            <path d="M15 17 h18 M15 24 h18 M15 31 h10" />
+                        </svg>
+                        <div>
+                            <h3>La rueda y la escritura</h3>
+                            <p>En Mesopotamia se usó la rueda para el transporte y la alfarería, y los sumerios crearon
+                                la escritura cuneiforme para registrar cosechas, deudas y leyes. La metalurgia del
+                                bronce mejoró herramientas y armas.</p>
+                            <p class="impact"><b>Impacto social:</b> La escritura permitió guardar y transmitir
+                                conocimiento más allá de la memoria de una persona.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">Siglos III a. C. – II d. C.<small>Mundo clásico</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="24" cy="24" r="7" />
+                            <path
+                                d="M24 6 V12 M24 36 V42 M6 24 H12 M36 24 H42 M11 11 L15 15 M33 33 L37 37 M37 11 L33 15 M15 33 L11 37" />
+                            <circle cx="24" cy="24" r="14" />
+                        </svg>
+                        <div>
+                            <h3>Ingeniería, matemáticas y papel</h3>
+                            <p>Arquímedes formuló principios de la palanca y la flotación, y los romanos construyeron
+                                acueductos, caminos y concreto. En China se desarrolló el papel (tradicionalmente
+                                atribuido a Cai Lun, año 105), junto con la brújula y la pólvora en los siglos
+                                siguientes.</p>
+                            <p class="impact"><b>Impacto social:</b> Las ciudades crecieron con agua potable, comercio y
+                                administración escrita.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">Siglos XIII–XIV<small>Edad Media</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="24" cy="24" r="17" />
+                            <path d="M24 12 V24 L32 29" />
+                        </svg>
+                        <div>
+                            <h3>Molinos, anteojos y reloj mecánico</h3>
+                            <p>Se extendieron los molinos de agua y de viento, se inventaron los anteojos en Italia
+                                hacia 1286 y aparecieron los relojes mecánicos en las torres europeas.</p>
+                            <p class="impact"><b>Impacto social:</b> El tiempo empezó a medirse en horas iguales, lo que
+                                organizó el trabajo y la vida urbana.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">≈ 1450<small>Renacimiento</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M24 6 V20 M14 6 H34 M10 40 H38 M14 40 V30 H34 V40" />
+                            <rect x="12" y="20" width="24" height="10" rx="1" />
+                        </svg>
+                        <div>
+                            <h3>La imprenta de tipos móviles</h3>
+                            <p>Johannes Gutenberg combinó tipos metálicos móviles, tinta oleosa y una prensa. La Biblia
+                                de Gutenberg se imprimió hacia 1455.</p>
+                            <p class="impact"><b>Impacto social:</b> Los libros se abarataron, creció la alfabetización
+                                y las ideas circularon con rapidez, lo que impulsó la ciencia moderna.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1608 – 1642<small>Revolución científica</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="21" cy="21" r="12" />
+                            <path d="M30 30 L41 41" />
+                        </svg>
+                        <div>
+                            <h3>Telescopio, microscopio y primera calculadora</h3>
+                            <p>El telescopio (1608) y su uso astronómico por Galileo (1609) cambiaron la visión del
+                                universo. En 1642 Blaise Pascal construyó la Pascalina, una calculadora mecánica de
+                                sumas y restas.</p>
+                            <p class="impact"><b>Impacto social:</b> El método experimental pasó a ser la base del
+                                conocimiento científico.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1769 – 1840<small>1.ª Revolución Industrial</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="24" cy="24" r="7" />
+                            <path
+                                d="M24 6 V12 M24 36 V42 M6 24 H12 M36 24 H42 M11 11 L15 15 M33 33 L37 37 M37 11 L33 15 M15 33 L11 37" />
+                            <circle cx="24" cy="24" r="14" />
+                        </svg>
+                        <div>
+                            <h3>El vapor y la fábrica</h3>
+                            <p>James Watt perfeccionó la máquina de vapor (patente de 1769). Con ella llegaron los
+                                telares mecánicos y, en 1825, el primer ferrocarril público de pasajeros entre Stockton
+                                y Darlington.</p>
+                            <p class="impact"><b>Impacto social:</b> Millones de personas migraron del campo a la ciudad
+                                y nació la clase obrera industrial.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1837 – 1901<small>2.ª Revolución Industrial</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M17 31 C10 25 11 12 24 10 C37 12 38 25 31 31 C29 33 29 35 29 36 H19 C19 35 19 33 17 31 Z" />
+                            <path d="M19 41 H29 M21 36 V41 M27 36 V41" />
+                        </svg>
+                        <div>
+                            <h3>Electricidad, telégrafo, teléfono y radio</h3>
+                            <p>Samuel Morse transmitió su primer mensaje telegráfico en 1844 y Alexander Graham Bell
+                                patentó el teléfono en 1876. Thomas Edison presentó una bombilla práctica en 1879, Karl
+                                Benz patentó el automóvil en 1886 y Guglielmo Marconi envió una señal de radio a través
+                                del Atlántico en 1901.</p>
+                            <p class="impact"><b>Impacto social:</b> La luz eléctrica alargó el día, y las
+                                comunicaciones a distancia acercaron países y mercados.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1903 – 1928<small>Inicios del siglo XX</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M42 8 L6 22 L18 26 L22 38 L28 28 L36 34 Z" />
+                        </svg>
+                        <div>
+                            <h3>Aviación, producción en serie y penicilina</h3>
+                            <p>Los hermanos Wright volaron en 1903. Henry Ford implantó la línea de montaje móvil en
+                                1913 y Alexander Fleming descubrió la penicilina en 1928.</p>
+                            <p class="impact"><b>Impacto social:</b> Viajar y comprar bienes se volvió más accesible, y
+                                la esperanza de vida aumentó con los antibióticos.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1945 – 1958<small>Era electrónica</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="12" y="12" width="24" height="24" rx="3" />
+                            <rect x="19" y="19" width="10" height="10" />
+                            <path
+                                d="M18 6 V12 M24 6 V12 M30 6 V12 M18 36 V42 M24 36 V42 M30 36 V42 M6 18 H12 M6 24 H12 M6 30 H12 M36 18 H42 M36 24 H42 M36 30 H42" />
+                        </svg>
+                        <div>
+                            <h3>Computadoras, transistor y circuito integrado</h3>
+                            <p>El ENIAC (1945–1946) fue una de las primeras computadoras electrónicas de propósito
+                                general. El transistor (Bell Labs, 1947) sustituyó a los tubos de vacío y el circuito
+                                integrado (1958–1959) permitió reunir muchos componentes en una sola pieza de silicio.
+                            </p>
+                            <p class="impact"><b>Impacto social:</b> Las máquinas de cálculo dejaron de ser enormes y
+                                costosas, y abrieron paso a la informática.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1957 – 1969<small>Carrera espacial</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="19" y="19" width="10" height="10" transform="rotate(45 24 24)" />
+                            <path d="M6 14 L16 24 M32 24 L42 34 M13 7 L21 15 M27 33 L35 41" />
+                        </svg>
+                        <div>
+                            <h3>Satélites y llegada a la Luna</h3>
+                            <p>La Unión Soviética lanzó el Sputnik 1 en 1957. En 1969 el Apolo 11 llevó a las primeras
+                                personas a la Luna. Los satélites hicieron posibles las telecomunicaciones globales, la
+                                meteorología y, más tarde, el GPS.</p>
+                            <p class="impact"><b>Impacto social:</b> La televisión en directo y la predicción del clima
+                                se volvieron parte de la vida diaria.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1971 – 1981<small>Computación personal</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="10" y="12" width="28" height="24" rx="3" />
+                            <path d="M6 20 H10 M6 28 H10 M38 20 H42 M38 28 H42" />
+                            <circle cx="24" cy="24" r="5" />
+                        </svg>
+                        <div>
+                            <h3>Microprocesador y computadora personal</h3>
+                            <p>Intel lanzó el 4004 en 1971, con 2.300 transistores. En 1981 IBM presentó la IBM PC, que
+                                popularizó la computadora de escritorio en oficinas y hogares.</p>
+                            <p class="impact"><b>Impacto social:</b> La computadora salió de los centros de
+                                investigación y llegó a escuelas, empresas y familias.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1989 – 1993<small>Era de la información</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="24" cy="24" r="17" />
+                            <ellipse cx="24" cy="24" rx="7" ry="17" />
+                            <path d="M7 24 H41 M10 15 H38 M10 33 H38" />
+                        </svg>
+                        <div>
+                            <h3>La World Wide Web</h3>
+                            <p>Tim Berners-Lee propuso la Web en el CERN en 1989 y el primer sitio público apareció en
+                                1991. En 1993 el CERN liberó la tecnología sin pago de derechos y se lanzó el navegador
+                                Mosaic.</p>
+                            <p class="impact"><b>Impacto social:</b> Cualquier persona conectada pudo publicar y
+                                consultar información desde cualquier lugar.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">2007 – 2016<small>Era móvil</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="14" y="5" width="20" height="38" rx="4" />
+                            <path d="M21 38 H27" />
+                        </svg>
+                        <div>
+                            <h3>Smartphones, redes sociales y nube</h3>
+                            <p>El iPhone (2007) y Android (2008) pusieron Internet en el bolsillo. Las redes sociales,
+                                las tiendas de aplicaciones y los servicios en la nube cambiaron cómo se trabaja, se
+                                compra y se socializa.</p>
+                            <p class="impact"><b>Impacto social:</b> El teléfono pasó a ser, a la vez, cámara, mapa,
+                                banco, agenda y medio de comunicación.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">2016 – hoy<small>Era de la inteligencia artificial</small></div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="10" y="14" width="28" height="22" rx="5" />
+                            <circle cx="19" cy="25" r="3" />
+                            <circle cx="29" cy="25" r="3" />
+                            <path d="M24 14 V8 M20 8 H28" />
+                        </svg>
+                        <div>
+                            <h3>Aprendizaje automático e IA generativa</h3>
+                            <p>En 2016 AlphaGo venció a un campeón mundial de Go. Desde 2022, los modelos de lenguaje y
+                                de imágenes generativas llegaron al público general y se usan para escribir, programar,
+                                traducir y diseñar.</p>
+                            <p class="impact"><b>Impacto social:</b> Abre oportunidades de productividad y plantea
+                                debates sobre empleo, derechos de autor, sesgos y desinformación.</p>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section class="section" id="revoluciones">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Marco general</span>
+                <h2>Las revoluciones industriales</h2>
+                <p>Los historiadores agrupan los grandes saltos tecnológicos en revoluciones que cambiaron la economía y
+                    la sociedad.</p>
+            </div>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Revolución</th>
+                            <th>Periodo</th>
+                            <th>Tecnologías clave</th>
+                            <th>Cambio social principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.ª Industrial</td>
+                            <td>≈ 1760–1840</td>
+                            <td>Máquina de vapor, telar mecánico, ferrocarril</td>
+                            <td>Urbanización y trabajo en fábricas</td>
+                        </tr>
+                        <tr>
+                            <td>2.ª Industrial</td>
+                            <td>≈ 1870–1914</td>
+                            <td>Electricidad, acero, petróleo, producción en serie, telégrafo y teléfono</td>
+                            <td>Consumo masivo y grandes ciudades</td>
+                        </tr>
+                        <tr>
+                            <td>3.ª o digital</td>
+                            <td>≈ 1950–2000</td>
+                            <td>Electrónica, computadoras, automatización, Internet</td>
+                            <td>Sociedad de la información y globalización</td>
+                        </tr>
+                        <tr>
+                            <td>4.ª Industrial</td>
+                            <td>2010 en adelante</td>
+                            <td>Inteligencia artificial, robótica, Internet de las cosas, datos masivos</td>
+                            <td>Automatización del trabajo cognitivo y debates éticos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="moore">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Ritmo del cambio</span>
+                <h2>La miniaturización de los chips</h2>
+            </div>
+            <div class="grid g3">
+                <div class="card"><span class="tag">1965</span>
+                    <h3>La ley de Moore</h3>
+                    <p>Gordon Moore observó que el número de transistores en un circuito integrado se duplicaba
+                        aproximadamente cada dos años. Esa tendencia guio a la industria durante décadas.</p>
+                </div>
+                <div class="card"><span class="tag">1971 → hoy</span>
+                    <h3>De 2.300 a miles de millones</h3>
+                    <p>El Intel 4004 tenía 2.300 transistores. Los procesadores actuales superan los diez mil millones,
+                        en una superficie similar a una uña.</p>
+                </div>
+                <div class="card"><span class="tag">Consecuencia</span>
+                    <h3>Más potencia, menos tamaño</h3>
+                    <p>Por eso los teléfonos actuales superan en capacidad de cálculo a las grandes computadoras de hace
+                        medio siglo y caben en la mano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="wrap">
+            <nav class="pager" aria-label="Navegación entre apartados"><a class="next only"
+                    href="desarrollo.html"><small>Siguiente →</small><strong>Desarrollo</strong></a></nav>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div>
+                <div class="fb"><span aria-hidden="true">🌍</span>Tecnología y Sociedad</div>
+                <p>Sitio informativo sobre la evolución tecnológica y su impacto en la vida cotidiana y social.</p>
+            </div>
+            <div>
+                <h4>Apartados</h4>
+                <ul>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="desarrollo.html">Desarrollo</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li><a href="educacion.html">Educación</a></li>
+                    <li><a href="comunicacion.html">Comunicación</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Fuentes de consulta</h4>
+                <ul>
+                    <li><a href="https://computerhistory.org" rel="noopener" target="_blank">Computer History Museum</a>
+                    </li>
+                    <li><a href="https://www.britishmuseum.org" rel="noopener" target="_blank">Museo Británico</a></li>
+                    <li><a href="https://home.cern/science/computing/birth-web" rel="noopener" target="_blank">CERN,
+                            historia de la Web</a></li>
+                    <li><a href="https://www.intel.com" rel="noopener" target="_blank">Intel, historia del 4004</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

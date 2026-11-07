@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Internet como red global: historia, funcionamiento, cifras e impacto en la conectividad y el acceso a la información.">
+    <title>Internet · Tecnología y Sociedad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap"><a class="brand" href="index.html" aria-label="Tecnología y Sociedad, ir al inicio"><span
+                    class="logo" aria-hidden="true">🌍</span><span class="name">Tecnología y Sociedad</span></a>
+            <nav class="nav" aria-label="Apartados"><a href="historia.html">Historia</a><a
+                    href="desarrollo.html">Desarrollo</a><a href="internet.html" aria-current="page">Internet</a><a
+                    href="educacion.html">Educación</a><a href="comunicacion.html">Comunicación</a></nav>
+        </div>
+    </header>
+    <section class="hero hero-page"><svg class="wallpaper" viewBox="0 0 1440 700" preserveAspectRatio="xMaxYMid slice"
+            aria-hidden="true" focusable="false">
+            <defs>
+                <radialGradient id="hpg" cx="0.819" cy="0.429" r="0.55">
+                    <stop offset="0" stop-color="var(--hd-bg-2)" />
+                    <stop offset="1" stop-color="var(--hd-bg)" />
+                </radialGradient>
+                <pattern id="hpp" width="36" height="36" patternUnits="userSpaceOnUse">
+                    <circle cx="2" cy="2" r="1.2" fill="var(--hd-line)" opacity=".22" />
+                </pattern>
+                <linearGradient id="hpf" x1="0" x2="1">
+                    <stop offset="0" stop-color="var(--hd-bg)" stop-opacity=".92" />
+                    <stop offset=".55" stop-color="var(--hd-bg)" stop-opacity=".35" />
+                    <stop offset="1" stop-color="var(--hd-bg)" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            <rect width="1440" height="700" fill="url(#hpg)" />
+            <rect width="1440" height="700" fill="url(#hpp)" />
+            <circle cx="1180" cy="300" r="296" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                stroke-dasharray="3 9" opacity=".35" />
+            <circle cx="1180" cy="300" r="250" fill="none" stroke="var(--hd-line)" stroke-width="1.6" opacity=".6" />
+            <ellipse cx="1180" cy="300" rx="70.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300" rx="145.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300" rx="215.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <path d="M1180 50 V550" fill="none" stroke="var(--hd-line)" stroke-width="1" opacity=".3" />
+            <ellipse cx="1180" cy="83.5" rx="125.0" ry="17.5" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="175.0" rx="216.5" ry="30.3" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300.0" rx="250.0" ry="35.0" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="425.0" rx="216.5" ry="30.3" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="516.5" rx="125.0" ry="17.5" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <path d="M1220.3 325.7 Q1255.0 316.2 1238.9 295.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1220.3 325.7 Q1272.5 310.7 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1165.8 101.4 Q1164.7 77.8 1167.1 106.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1165.8 101.4 Q1152.4 67.1 1145.1 84.4" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1238.9 295.8 Q1281.9 290.2 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1186.3 457.7 Q1176.2 511.2 1167.1 512.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1186.3 457.7 Q1213.3 504.3 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1351.9 230.6 Q1344.7 259.1 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1351.9 230.6 Q1337.4 252.7 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1098.6 492.4 Q1087.9 530.7 1096.4 520.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1098.6 492.4 Q1062.7 496.2 1053.4 455.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1298.1 493.6 Q1275.4 520.4 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M963.4 198.4 Q930.3 235.0 947.5 284.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M963.4 198.4 Q990.2 163.1 1059.2 158.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1300.0 83.9 Q1310.1 59.0 1295.6 79.9" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1300.0 83.9 Q1307.9 64.5 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1253.1 218.3 Q1285.9 241.4 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1001.3 468.8 Q1009.6 481.0 1053.4 455.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1001.3 468.8 Q966.3 454.8 973.4 410.2" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M947.5 284.7 Q967.1 304.4 1038.6 323.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1167.1 512.6 Q1202.0 532.0 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1379.1 332.1 Q1358.9 318.8 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1273.1 289.7 Q1306.0 293.6 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1038.6 323.1 Q1007.9 370.0 1025.4 397.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1295.6 79.9 Q1305.4 62.3 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1279.3 132.1 Q1297.8 88.8 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1025.4 397.3 Q976.8 416.7 973.4 410.2" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1123.8 163.8 Q1115.2 122.2 1124.4 129.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1123.8 163.8 Q1077.6 139.1 1059.2 158.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1124.4 129.6 Q1140.9 92.3 1167.1 106.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1167.1 106.1 Q1153.1 69.4 1145.1 84.4" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <circle cx="1220.3" cy="325.7" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1220.3" cy="325.7" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1165.8" cy="101.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1238.9" cy="295.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1186.3" cy="457.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1351.9" cy="230.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1098.6" cy="492.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1298.1" cy="493.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="963.4" cy="198.4" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="963.4" cy="198.4" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1300.0" cy="83.9" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1253.1" cy="218.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1001.3" cy="468.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="947.5" cy="284.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1053.4" cy="455.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1167.1" cy="512.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1379.1" cy="332.1" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1379.1" cy="332.1" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1273.1" cy="289.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1287.0" cy="300.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1038.6" cy="323.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1295.6" cy="79.9" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1279.3" cy="132.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1025.4" cy="397.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="973.4" cy="410.2" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="973.4" cy="410.2" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1123.8" cy="163.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1124.4" cy="129.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1291.0" cy="90.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1096.4" cy="520.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1167.1" cy="106.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1145.1" cy="84.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1232.0" cy="499.5" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1232.0" cy="499.5" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1059.2" cy="158.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <rect width="1440" height="700" fill="url(#hpf)" />
+        </svg>
+        <div class="wrap">
+            <div class="copy">
+                <div class="eyebrow">Apartado · Internet</div>
+                <h1>Internet, la red global</h1>
+                <p class="lead">Una red de redes que conecta a miles de millones de personas y cambió la forma de
+                    acceder a la información, comprar, trabajar y relacionarse.</p>
+                <div class="chips"><a href="#que-es">Qué es</a><a href="#historia">Cómo surgió</a><a
+                        href="#funcionamiento">Cómo funciona</a><a href="#cifras">Cifras</a><a
+                        href="#impacto">Impacto</a><a href="#retos">Retos</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="que-es">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Qué es</span>
+                <h2>Internet y la Web no son lo mismo</h2>
+            </div>
+            <div class="grid g2">
+                <div class="card">
+                    <h3>Internet</h3>
+                    <p>Es la infraestructura: millones de redes de computadoras, cables, antenas y satélites conectados
+                        mediante un conjunto de reglas llamado TCP/IP. Sirve para enviar datos de cualquier tipo.</p>
+                </div>
+                <div class="card">
+                    <h3>La World Wide Web</h3>
+                    <p>Es un servicio que funciona sobre Internet: páginas enlazadas, que se consultan con un navegador.
+                        El correo electrónico, la mensajería y los videojuegos en línea también usan Internet, pero no
+                        son la Web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="historia">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Cómo surgió</span>
+                <h2>De una red experimental a la red global</h2>
+            </div>
+            <ol class="tl">
+                <li>
+                    <div class="when">1969</div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="10" y="12" width="28" height="24" rx="3" />
+                            <path d="M6 20 H10 M6 28 H10 M38 20 H42 M38 28 H42" />
+                            <circle cx="24" cy="24" r="5" />
+                        </svg>
+                        <div>
+                            <h3>ARPANET: el primer mensaje</h3>
+                            <p>El 29 de octubre de 1969 se envió el primer mensaje entre la Universidad de California en
+                                Los Ángeles y el Instituto de Investigación de Stanford. Era un proyecto militar y
+                                académico de EE. UU.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1971</div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M8 10 H40 V31 H24 L15 39 V31 H8 Z" />
+                            <path d="M15 18 H33 M15 24 H27" />
+                        </svg>
+                        <div>
+                            <h3>Aparece el correo electrónico</h3>
+                            <p>Ray Tomlinson envió el primer correo entre computadoras de una red y adoptó el símbolo @
+                                para separar usuario y equipo.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1983</div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="24" cy="24" r="7" />
+                            <path
+                                d="M24 6 V12 M24 36 V42 M6 24 H12 M36 24 H42 M11 11 L15 15 M33 33 L37 37 M37 11 L33 15 M15 33 L11 37" />
+                            <circle cx="24" cy="24" r="14" />
+                        </svg>
+                        <div>
+                            <h3>TCP/IP: el idioma común</h3>
+                            <p>El 1 de enero de 1983 ARPANET adoptó TCP/IP. Desde entonces redes distintas pudieron
+                                conectarse entre sí: nació Internet como «red de redes». Ese mismo año se creó el
+                                sistema de nombres de dominio (DNS).</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1989 – 1991</div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="24" cy="24" r="17" />
+                            <ellipse cx="24" cy="24" rx="7" ry="17" />
+                            <path d="M7 24 H41 M10 15 H38 M10 33 H38" />
+                        </svg>
+                        <div>
+                            <h3>La World Wide Web</h3>
+                            <p>Tim Berners-Lee, en el CERN, creó el HTML, el protocolo HTTP y las direcciones web (URL).
+                                El primer sitio público se publicó en 1991.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">1993 – 1998</div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="21" cy="21" r="12" />
+                            <path d="M30 30 L41 41" />
+                        </svg>
+                        <div>
+                            <h3>Navegadores y buscadores</h3>
+                            <p>El navegador Mosaic (1993) hizo la Web visual. Los buscadores como Yahoo! y Google (1998)
+                                permitieron encontrar información entre millones de páginas.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">2004 – 2010</div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="17" cy="16" r="6" />
+                            <circle cx="33" cy="18" r="5" />
+                            <path d="M5 38 C6 28 28 28 29 38 M28 36 C30 29 44 29 44 37" />
+                        </svg>
+                        <div>
+                            <h3>Web 2.0 y redes sociales</h3>
+                            <p>Con Facebook (2004), YouTube (2005) y Twitter (2006), los usuarios dejaron de solo leer y
+                                comenzaron a producir contenido.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">2007 – hoy</div>
+                    <div class="what"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="14" y="5" width="20" height="38" rx="4" />
+                            <path d="M21 38 H27" />
+                        </svg>
+                        <div>
+                            <h3>Internet móvil y de las cosas</h3>
+                            <p>Los smartphones y las redes 4G y 5G llevaron Internet a todas partes. Hoy también se
+                                conectan electrodomésticos, autos, sensores y relojes.</p>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section class="section" id="funcionamiento">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Cómo funciona</span>
+                <h2>El recorrido de un mensaje o una página</h2>
+                <p>Cuando abres un sitio web, tu solicitud pasa por varios equipos hasta llegar al servidor que guarda
+                    la información.</p>
+            </div>
+            <div class="diagram"><svg viewBox="0 0 980 260" role="img"
+                    aria-label="Diagrama del recorrido de la información: dispositivo, router, proveedor de Internet, red troncal con cables submarinos y servidor">
+                    <defs>
+                        <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7"
+                            orient="auto">
+                            <path d="M0 0 L10 5 L0 10 z" fill="var(--accent)" />
+                        </marker>
+                    </defs>
+                    <rect class="box" x="10" y="70" width="150" height="90" rx="12" /><text x="85" y="108"
+                        text-anchor="middle" style="font-weight:700;font-size:15px">Tu dispositivo</text><text
+                        class="sm" x="85" y="130" text-anchor="middle">Teléfono o computadora</text>
+                    <rect class="box" x="205" y="70" width="150" height="90" rx="12" /><text x="280" y="108"
+                        text-anchor="middle" style="font-weight:700;font-size:15px">Router</text><text class="sm"
+                        x="280" y="130" text-anchor="middle">Red local, Wi-Fi</text>
+                    <rect class="box" x="400" y="70" width="150" height="90" rx="12" /><text x="475" y="108"
+                        text-anchor="middle" style="font-weight:700;font-size:15px">Proveedor (ISP)</text><text
+                        class="sm" x="475" y="130" text-anchor="middle">Fibra, cable o móvil</text>
+                    <rect class="box" x="595" y="70" width="150" height="90" rx="12" /><text x="670" y="108"
+                        text-anchor="middle" style="font-weight:700;font-size:15px">Red troncal</text><text class="sm"
+                        x="670" y="130" text-anchor="middle">Cables submarinos</text>
+                    <rect class="box" x="790" y="70" width="150" height="90" rx="12" /><text x="865" y="108"
+                        text-anchor="middle" style="font-weight:700;font-size:15px">Servidor</text><text class="sm"
+                        x="865" y="130" text-anchor="middle">Centro de datos</text>
+                    <path class="link" d="M160 115 H205" marker-end="url(#ar)" />
+                    <path class="link" d="M355 115 H400" marker-end="url(#ar)" />
+                    <path class="link" d="M550 115 H595" marker-end="url(#ar)" />
+                    <path class="link" d="M745 115 H790" marker-end="url(#ar)" />
+                    <path class="ln2" d="M670 160 C670 215 870 215 865 162" />
+                    <circle class="dot" cx="670" cy="160" r="5" />
+                    <circle class="dot" cx="865" cy="162" r="5" /><text class="sm" x="768" y="238"
+                        text-anchor="middle">Más del 95 % del tráfico entre continentes viaja por cables
+                        submarinos</text><text class="sm" x="490" y="40" text-anchor="middle">Los datos se dividen en
+                        paquetes que viajan por la ruta disponible usando el protocolo TCP/IP</text>
+                </svg></div>
+        </div>
+    </section>
+    <section class="section" id="cifras">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Cifras</span>
+                <h2>Porcentaje de la población mundial que usa Internet</h2>
+                <p>El crecimiento fue rápido: en veinte años se pasó de uno de cada seis a casi tres de cada cuatro
+                    personas.</p>
+            </div>
+            <div class="bars">
+                <div class="bar"><span class="y">2005</span><span class="track"><span class="fill"
+                            style="width:16%"></span></span><span class="v">16 %</span></div>
+                <div class="bar"><span class="y">2010</span><span class="track"><span class="fill"
+                            style="width:29%"></span></span><span class="v">29 %</span></div>
+                <div class="bar"><span class="y">2019</span><span class="track"><span class="fill"
+                            style="width:54%"></span></span><span class="v">54 %</span></div>
+                <div class="bar"><span class="y">2023</span><span class="track"><span class="fill"
+                            style="width:67%"></span></span><span class="v">67 %</span></div>
+                <div class="bar"><span class="y">2025</span><span class="track"><span class="fill"
+                            style="width:74%"></span></span><span class="v">74 %</span></div>
+                <p class="note">Valores redondeados. Fuente: Unión Internacional de Telecomunicaciones (UIT). En 2025 la
+                    UIT estimó cerca de 6.000 millones de personas conectadas y 2.200 millones sin conexión.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="impacto">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Impacto</span>
+                <h2>Conectividad y acceso a la información</h2>
+                <p>Internet modificó las reglas de la economía, la cultura y la vida pública.</p>
+            </div>
+            <div class="grid g3">
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="21" cy="21" r="12" />
+                        <path d="M30 30 L41 41" />
+                    </svg>
+                    <h3>Acceso a la información</h3>
+                    <p>Enciclopedias, noticias, libros, artículos científicos y tutoriales están a una búsqueda de
+                        distancia. Wikipedia, creada en 2001, es hoy una de las fuentes más consultadas del mundo.</p>
+                </div>
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 8 H11 L15 30 H37 L41 15 H13" />
+                        <circle cx="19" cy="38" r="3" />
+                        <circle cx="34" cy="38" r="3" />
+                    </svg>
+                    <h3>Comercio y economía</h3>
+                    <p>El comercio electrónico, la banca en línea y los pagos digitales permiten comprar, vender y
+                        transferir dinero sin traslados, y crean empleos que antes no existían.</p>
+                </div>
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 22 L24 7 L41 22 M12 19 V40 H36 V19" />
+                        <path d="M20 40 V29 H28 V40" />
+                    </svg>
+                    <h3>Trabajo a distancia</h3>
+                    <p>Reuniones por video, documentos compartidos y la nube permiten colaborar desde cualquier lugar.
+                        El teletrabajo creció con fuerza desde 2020.</p>
+                </div>
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M24 6 L38 11 V23 C38 33 31 39 24 42 C17 39 10 33 10 23 V11 Z" />
+                        <path d="M18 24 L23 29 L31 19" />
+                    </svg>
+                    <h3>Servicios públicos</h3>
+                    <p>Trámites, certificados, citas médicas e impuestos pueden gestionarse en línea, lo que reduce
+                        filas y costos para ciudadanos y gobiernos.</p>
+                </div>
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M8 10 H22 C24 10 24 12 24 12 V40 C24 40 22 38 20 38 H8 Z M40 10 H26 C24 10 24 12 24 12 V40 C24 40 26 38 28 38 H40 Z" />
+                    </svg>
+                    <h3>Cultura y entretenimiento</h3>
+                    <p>La música, el cine, los libros y los videojuegos se distribuyen por transmisión y descarga, y los
+                        creadores llegan directamente a su audiencia.</p>
+                </div>
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="17" cy="16" r="6" />
+                        <circle cx="33" cy="18" r="5" />
+                        <path d="M5 38 C6 28 28 28 29 38 M28 36 C30 29 44 29 44 37" />
+                    </svg>
+                    <h3>Participación y comunidad</h3>
+                    <p>Foros, peticiones y redes permiten organizarse, opinar y apoyar causas. También exigen criterio
+                        para distinguir información fiable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="retos">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Retos</span>
+                <h2>Lo que se ganó y lo que sigue pendiente</h2>
+            </div>
+            <div class="pc">
+                <div class="col pos">
+                    <h3>Oportunidades</h3>
+                    <div class="pt"><b>Conocimiento abierto</b><span>Cursos, bibliotecas y datos públicos disponibles
+                            para cualquier persona con conexión.</span></div>
+                    <div class="pt"><b>Inclusión económica</b><span>Pequeños negocios venden a todo el mundo y las
+                            personas acceden a servicios financieros digitales.</span></div>
+                    <div class="pt"><b>Respuesta rápida</b><span>Las alertas de emergencia y la información de salud se
+                            difunden en minutos.</span></div>
+                </div>
+                <div class="col neg">
+                    <h3>Desafíos</h3>
+                    <div class="pt"><b>Brecha digital</b><span>Unos 2.200 millones de personas siguen sin conexión.
+                            Quienes no se conectan quedan fuera de servicios, empleos y educación.</span></div>
+                    <div class="pt"><b>Desinformación</b><span>Los contenidos falsos se difunden más rápido que su
+                            corrección. Hace falta verificar fuentes.</span></div>
+                    <div class="pt"><b>Privacidad y seguridad</b><span>Los datos personales son valiosos y están
+                            expuestos a fraudes, filtraciones y rastreo.</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="wrap">
+            <nav class="pager" aria-label="Navegación entre apartados"><a class="prev" href="desarrollo.html"><small>←
+                        Anterior</small><strong>Desarrollo</strong></a><a class="next"
+                    href="educacion.html"><small>Siguiente →</small><strong>Educación</strong></a></nav>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div>
+                <div class="fb"><span aria-hidden="true">🌍</span>Tecnología y Sociedad</div>
+                <p>Sitio informativo sobre la evolución tecnológica y su impacto en la vida cotidiana y social.</p>
+            </div>
+            <div>
+                <h4>Apartados</h4>
+                <ul>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="desarrollo.html">Desarrollo</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li><a href="educacion.html">Educación</a></li>
+                    <li><a href="comunicacion.html">Comunicación</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Fuentes de consulta</h4>
+                <ul>
+                    <li><a href="https://www.itu.int/en/mediacentre/Pages/PR-2025-11-17-Facts-and-Figures.aspx"
+                            rel="noopener" target="_blank">UIT, Facts and Figures 2025</a></li>
+                    <li><a href="https://home.cern/science/computing/birth-web" rel="noopener" target="_blank">CERN,
+                            nacimiento de la Web</a></li>
+                    <li><a href="https://www.internetsociety.org/internet/history-internet/" rel="noopener"
+                            target="_blank">Internet Society, historia de Internet</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

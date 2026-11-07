@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Transformación de los canales de comunicación: redes sociales, mensajería instantánea y videollamadas.">
+    <title>Comunicación · Tecnología y Sociedad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap"><a class="brand" href="index.html" aria-label="Tecnología y Sociedad, ir al inicio"><span
+                    class="logo" aria-hidden="true">🌍</span><span class="name">Tecnología y Sociedad</span></a>
+            <nav class="nav" aria-label="Apartados"><a href="historia.html">Historia</a><a
+                    href="desarrollo.html">Desarrollo</a><a href="internet.html">Internet</a><a
+                    href="educacion.html">Educación</a><a href="comunicacion.html" aria-current="page">Comunicación</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero hero-page"><svg class="wallpaper" viewBox="0 0 1440 700" preserveAspectRatio="xMaxYMid slice"
+            aria-hidden="true" focusable="false">
+            <defs>
+                <radialGradient id="hpg" cx="0.819" cy="0.429" r="0.55">
+                    <stop offset="0" stop-color="var(--hd-bg-2)" />
+                    <stop offset="1" stop-color="var(--hd-bg)" />
+                </radialGradient>
+                <pattern id="hpp" width="36" height="36" patternUnits="userSpaceOnUse">
+                    <circle cx="2" cy="2" r="1.2" fill="var(--hd-line)" opacity=".22" />
+                </pattern>
+                <linearGradient id="hpf" x1="0" x2="1">
+                    <stop offset="0" stop-color="var(--hd-bg)" stop-opacity=".92" />
+                    <stop offset=".55" stop-color="var(--hd-bg)" stop-opacity=".35" />
+                    <stop offset="1" stop-color="var(--hd-bg)" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            <rect width="1440" height="700" fill="url(#hpg)" />
+            <rect width="1440" height="700" fill="url(#hpp)" />
+            <circle cx="1180" cy="300" r="296" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                stroke-dasharray="3 9" opacity=".35" />
+            <circle cx="1180" cy="300" r="250" fill="none" stroke="var(--hd-line)" stroke-width="1.6" opacity=".6" />
+            <ellipse cx="1180" cy="300" rx="70.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300" rx="145.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300" rx="215.0" ry="250" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <path d="M1180 50 V550" fill="none" stroke="var(--hd-line)" stroke-width="1" opacity=".3" />
+            <ellipse cx="1180" cy="83.5" rx="125.0" ry="17.5" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="175.0" rx="216.5" ry="30.3" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="300.0" rx="250.0" ry="35.0" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="425.0" rx="216.5" ry="30.3" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <ellipse cx="1180" cy="516.5" rx="125.0" ry="17.5" fill="none" stroke="var(--hd-line)" stroke-width="1"
+                opacity=".3" />
+            <path d="M1220.3 325.7 Q1255.0 316.2 1238.9 295.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1220.3 325.7 Q1272.5 310.7 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1165.8 101.4 Q1164.7 77.8 1167.1 106.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1165.8 101.4 Q1152.4 67.1 1145.1 84.4" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1238.9 295.8 Q1281.9 290.2 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1186.3 457.7 Q1176.2 511.2 1167.1 512.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1186.3 457.7 Q1213.3 504.3 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1351.9 230.6 Q1344.7 259.1 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1351.9 230.6 Q1337.4 252.7 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1098.6 492.4 Q1087.9 530.7 1096.4 520.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1098.6 492.4 Q1062.7 496.2 1053.4 455.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1298.1 493.6 Q1275.4 520.4 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M963.4 198.4 Q930.3 235.0 947.5 284.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M963.4 198.4 Q990.2 163.1 1059.2 158.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1300.0 83.9 Q1310.1 59.0 1295.6 79.9" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1300.0 83.9 Q1307.9 64.5 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1253.1 218.3 Q1285.9 241.4 1273.1 289.7" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1001.3 468.8 Q1009.6 481.0 1053.4 455.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1001.3 468.8 Q966.3 454.8 973.4 410.2" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M947.5 284.7 Q967.1 304.4 1038.6 323.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1167.1 512.6 Q1202.0 532.0 1232.0 499.5" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1379.1 332.1 Q1358.9 318.8 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1273.1 289.7 Q1306.0 293.6 1287.0 300.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1038.6 323.1 Q1007.9 370.0 1025.4 397.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1295.6 79.9 Q1305.4 62.3 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1279.3 132.1 Q1297.8 88.8 1291.0 90.8" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1025.4 397.3 Q976.8 416.7 973.4 410.2" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1123.8 163.8 Q1115.2 122.2 1124.4 129.6" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1123.8 163.8 Q1077.6 139.1 1059.2 158.3" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1124.4 129.6 Q1140.9 92.3 1167.1 106.1" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <path d="M1167.1 106.1 Q1153.1 69.4 1145.1 84.4" fill="none" stroke="var(--hd-line)" stroke-width="1.3"
+                opacity=".55" />
+            <circle cx="1220.3" cy="325.7" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1220.3" cy="325.7" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1165.8" cy="101.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1238.9" cy="295.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1186.3" cy="457.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1351.9" cy="230.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1098.6" cy="492.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1298.1" cy="493.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="963.4" cy="198.4" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="963.4" cy="198.4" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1300.0" cy="83.9" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1253.1" cy="218.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1001.3" cy="468.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="947.5" cy="284.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1053.4" cy="455.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1167.1" cy="512.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1379.1" cy="332.1" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1379.1" cy="332.1" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1273.1" cy="289.7" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1287.0" cy="300.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1038.6" cy="323.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1295.6" cy="79.9" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1279.3" cy="132.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1025.4" cy="397.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="973.4" cy="410.2" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="973.4" cy="410.2" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1123.8" cy="163.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1124.4" cy="129.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1291.0" cy="90.8" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1096.4" cy="520.6" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1167.1" cy="106.1" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1145.1" cy="84.4" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <circle cx="1232.0" cy="499.5" r="4.2" fill="var(--hd-warm)" opacity="1" />
+            <circle cx="1232.0" cy="499.5" r="11" fill="none" stroke="var(--hd-warm)" stroke-width="1" opacity=".5" />
+            <circle cx="1059.2" cy="158.3" r="2.8" fill="var(--hd-fg)" opacity="0.85" />
+            <rect width="1440" height="700" fill="url(#hpf)" />
+        </svg>
+        <div class="wrap">
+            <div class="copy">
+                <div class="eyebrow">Apartado · Comunicación</div>
+                <h1>Comunicación en la era digital</h1>
+                <p class="lead">Cómo pasamos de las cartas al chat y a la videollamada, y qué efectos tiene en nuestras
+                    relaciones, nuestro trabajo y la opinión pública.</p>
+                <div class="chips"><a href="#canales">Canales</a><a href="#impacto">Impacto</a><a
+                        href="#habitos">Hábitos saludables</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="canales">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Canales de interacción</span>
+                <h2>Seis etapas de la comunicación a distancia</h2>
+                <p>Cada canal redujo el tiempo y el costo de comunicarse, y cambió también cómo nos relacionamos.</p>
+            </div>
+            <div class="grid g3">
+                <article class="card">
+                    <figure class="fig"><svg class="il" viewBox="0 0 240 160" role="img"
+                            aria-label="Ilustración de una carta y un telégrafo">
+                            <rect class="b l" x="26" y="40" width="110" height="76" rx="6" />
+                            <path class="n l" d="M26 46 L81 86 L136 46" />
+                            <rect class="c" x="104" y="48" width="22" height="26" rx="2" opacity="0" />
+                            <rect class="d l" x="150" y="96" width="70" height="30" rx="4" />
+                            <rect class="a" x="176" y="70" width="8" height="26" />
+                            <circle class="c" cx="180" cy="66" r="7" />
+                            <path class="sc" d="M160 84 h6 M172 84 h14 M192 84 h6 M204 84 h12" opacity="0" /><text
+                                x="154" y="148">· — · · —</text>
+                        </svg></figure><span class="tag">Hasta el siglo XIX</span>
+                    <h3>Cartas y telégrafo</h3>
+                    <p>Una carta podía tardar días o meses. En 1844 el telégrafo eléctrico permitió enviar mensajes en
+                        minutos usando el código Morse.</p>
+                    <dl class="specs">
+                        <dt>Velocidad</dt>
+                        <dd>De meses a minutos</dd>
+                        <dt>Alcance</dt>
+                        <dd>Ciudades y países</dd>
+                        <dt>Limitación</dt>
+                        <dd>Solo texto corto</dd>
+                    </dl>
+                </article>
+                <article class="card">
+                    <figure class="fig"><svg class="il" viewBox="0 0 240 160" role="img"
+                            aria-label="Ilustración de un teléfono de disco">
+                            <path class="b l"
+                                d="M30 112 Q30 92 56 90 H184 Q210 92 210 112 V128 Q210 138 200 138 H40 Q30 138 30 128 Z" />
+                            <circle class="d l" cx="120" cy="108" r="30" />
+                            <circle class="b" cx="120" cy="108" r="9" />
+                            <circle class="w" cx="137.3" cy="118.0" r="3.4" />
+                            <circle class="w" cx="130.6" cy="125.0" r="3.4" />
+                            <circle class="w" cx="121.4" cy="128.0" r="3.4" />
+                            <circle class="w" cx="111.9" cy="126.3" r="3.4" />
+                            <circle class="w" cx="104.2" cy="120.3" r="3.4" />
+                            <circle class="w" cx="100.3" cy="111.5" r="3.4" />
+                            <circle class="w" cx="101.0" cy="101.8" r="3.4" />
+                            <circle class="w" cx="106.1" cy="93.6" r="3.4" />
+                            <circle class="w" cx="114.5" cy="88.8" r="3.4" />
+                            <circle class="w" cx="124.2" cy="88.4" r="3.4" />
+                            <path class="a l"
+                                d="M46 66 Q46 46 72 46 H168 Q194 46 194 66 L186 78 Q180 84 172 78 L168 70 H72 L68 78 Q60 84 54 78 Z" />
+                        </svg></figure><span class="tag">1876 → siglo XX</span>
+                    <h3>El teléfono</h3>
+                    <p>Por primera vez, dos personas podían conversar con su voz a distancia y en tiempo real. Fue la
+                        base de las comunicaciones personales durante un siglo.</p>
+                    <dl class="specs">
+                        <dt>Patente</dt>
+                        <dd>A. G. Bell, 1876</dd>
+                        <dt>Ventaja</dt>
+                        <dd>Voz en tiempo real</dd>
+                        <dt>Limitación</dt>
+                        <dd>Línea fija</dd>
+                    </dl>
+                </article>
+                <article class="card">
+                    <figure class="fig"><svg class="il" viewBox="0 0 240 160" role="img"
+                            aria-label="Ilustración de un correo electrónico con el símbolo arroba">
+                            <rect class="b l" x="34" y="30" width="172" height="100" rx="10" />
+                            <path class="n l" d="M34 40 L120 94 L206 40" />
+                            <circle class="c l" cx="186" cy="38" r="18" /><text x="180" y="43"
+                                style="fill:var(--il-d);font-size:16px;font-weight:700">@</text>
+                            <path class="sa" d="M52 112 h50" />
+                        </svg></figure><span class="tag">1971 → hoy</span>
+                    <h3>Correo electrónico</h3>
+                    <p>Enviar un mensaje a cualquier lugar casi sin costo y en segundos. Se volvió la herramienta
+                        central de trabajo y de comunicación formal.</p>
+                    <dl class="specs">
+                        <dt>Primer correo</dt>
+                        <dd>R. Tomlinson, 1971</dd>
+                        <dt>Ventaja</dt>
+                        <dd>Gratuito y asíncrono</dd>
+                        <dt>Uso</dt>
+                        <dd>Trabajo y trámites</dd>
+                    </dl>
+                </article>
+                <article class="card">
+                    <figure class="fig"><svg class="il" viewBox="0 0 240 160" role="img"
+                            aria-label="Ilustración de burbujas de conversación de un chat">
+                            <rect class="a l" x="26" y="26" width="116" height="48" rx="14" />
+                            <path class="a l" d="M44 74 l-4 16 l20 -16" />
+                            <path class="b" d="M44 74 l-4 16 l20 -16" opacity="0" />
+                            <path class="sw" d="M42 42 h70 M42 56 h46" stroke="#fff" opacity=".95" />
+                            <rect class="b l" x="98" y="88" width="116" height="48" rx="14" />
+                            <path class="b l" d="M196 136 l4 16 l-20 -16" />
+                            <path class="sa" d="M114 104 h70 M114 118 h40" />
+                            <circle class="c" cx="196" cy="42" r="6" />
+                        </svg></figure><span class="tag">1992 → hoy</span>
+                    <h3>Mensajería instantánea</h3>
+                    <p>Del SMS (1992) a aplicaciones como WhatsApp (2009) y Telegram. Mensajes, notas de voz, imágenes y
+                        grupos, en tiempo real y desde el teléfono.</p>
+                    <dl class="specs">
+                        <dt>Escala</dt>
+                        <dd>WhatsApp: más de 2.000 millones de usuarios</dd>
+                        <dt>Ventaja</dt>
+                        <dd>Inmediatez</dd>
+                        <dt>Reto</dt>
+                        <dd>Sobrecarga y privacidad</dd>
+                    </dl>
+                </article>
+                <article class="card">
+                    <figure class="fig"><svg class="il" viewBox="0 0 240 160" role="img"
+                            aria-label="Ilustración de una red social con personas conectadas">
+                            <path class="sw" d="M120 80 L46 44" />
+                            <path class="sw" d="M120 80 L194 44" />
+                            <path class="sw" d="M120 80 L44 122" />
+                            <path class="sw" d="M120 80 L196 120" />
+                            <path class="sw" d="M120 80 L120 20" />
+                            <path class="sw" d="M120 80 L120 142" />
+                            <path class="sc" d="M46 44 L120 20 L194 44 M44 122 L120 142 L196 120" />
+                            <circle class="c l" cx="120" cy="80" r="20" />
+                            <circle class="d" cx="120" cy="75.6" r="5.6" />
+                            <path class="d" d="M109.0 92.4 q11.0 -14.0 22.0 0 z" />
+                            <circle class="a l" cx="46" cy="44" r="13" />
+                            <circle class="d" cx="46" cy="41.14" r="3.6" />
+                            <path class="d" d="M38.9 52.1 q7.2 -9.1 14.3 0 z" />
+                            <circle class="b l" cx="194" cy="44" r="13" />
+                            <circle class="d" cx="194" cy="41.14" r="3.6" />
+                            <path class="d" d="M186.8 52.1 q7.2 -9.1 14.3 0 z" />
+                            <circle class="a l" cx="44" cy="122" r="13" />
+                            <circle class="d" cx="44" cy="119.14" r="3.6" />
+                            <path class="d" d="M36.9 130.1 q7.2 -9.1 14.3 0 z" />
+                            <circle class="b l" cx="196" cy="120" r="13" />
+                            <circle class="d" cx="196" cy="117.14" r="3.6" />
+                            <path class="d" d="M188.8 128.1 q7.2 -9.1 14.3 0 z" />
+                            <circle class="a l" cx="120" cy="20" r="10" />
+                            <circle class="d" cx="120" cy="17.8" r="2.8" />
+                            <path class="d" d="M114.5 26.2 q5.5 -7.0 11.0 0 z" />
+                            <circle class="b l" cx="120" cy="142" r="10" />
+                            <circle class="d" cx="120" cy="139.8" r="2.8" />
+                            <path class="d" d="M114.5 148.2 q5.5 -7.0 11.0 0 z" />
+                        </svg></figure><span class="tag">2004 → hoy</span>
+                    <h3>Redes sociales</h3>
+                    <p>Facebook (2004), YouTube (2005), Twitter (2006), Instagram (2010) y TikTok (2017) permiten
+                        publicar y seguir a personas de todo el mundo.</p>
+                    <dl class="specs">
+                        <dt>Escala</dt>
+                        <dd>Más de 5.000 millones de usuarios</dd>
+                        <dt>Ventaja</dt>
+                        <dd>Comunidad y alcance</dd>
+                        <dt>Reto</dt>
+                        <dd>Desinformación y salud mental</dd>
+                    </dl>
+                </article>
+                <article class="card">
+                    <figure class="fig"><svg class="il" viewBox="0 0 240 160" role="img"
+                            aria-label="Ilustración de una videollamada con varios participantes">
+                            <rect class="b l" x="26" y="14" width="188" height="118" rx="8" />
+                            <rect class="d" x="34" y="22" width="172" height="102" rx="3" />
+                            <rect class="b" x="40" y="28" width="50" height="42" rx="3" opacity=".12" />
+                            <circle class="a" cx="65" cy="44" r="8" />
+                            <path class="a" d="M49 68 q16 -22 32 0 z" />
+                            <rect class="b" x="96" y="28" width="50" height="42" rx="3" opacity=".12" />
+                            <circle class="c" cx="121" cy="44" r="8" />
+                            <path class="c" d="M105 68 q16 -22 32 0 z" />
+                            <rect class="b" x="152" y="28" width="50" height="42" rx="3" opacity=".12" />
+                            <circle class="w" cx="177" cy="44" r="8" />
+                            <path class="w" d="M161 68 q16 -22 32 0 z" />
+                            <rect class="b" x="40" y="76" width="50" height="42" rx="3" opacity=".12" />
+                            <circle class="a" cx="65" cy="92" r="8" />
+                            <path class="a" d="M49 116 q16 -22 32 0 z" />
+                            <rect class="b" x="96" y="76" width="50" height="42" rx="3" opacity=".12" />
+                            <circle class="c" cx="121" cy="92" r="8" />
+                            <path class="c" d="M105 116 q16 -22 32 0 z" />
+                            <rect class="b" x="152" y="76" width="50" height="42" rx="3" opacity=".12" />
+                            <circle class="w" cx="177" cy="92" r="8" />
+                            <path class="w" d="M161 116 q16 -22 32 0 z" />
+                            <rect class="w" x="100" y="136" width="40" height="8" rx="3" />
+                        </svg></figure><span class="tag">2003 → hoy</span>
+                    <h3>Videollamadas</h3>
+                    <p>Skype (2003) popularizó la llamada con imagen. En 2020 las videollamadas se volvieron cotidianas
+                        para trabajo, estudio y familia: las reuniones diarias de Zoom pasaron de 10 a 300 millones de
+                        participantes entre diciembre de 2019 y abril de 2020.</p>
+                    <dl class="specs">
+                        <dt>Ventaja</dt>
+                        <dd>Presencia visual a distancia</dd>
+                        <dt>Uso</dt>
+                        <dd>Trabajo, clases, familia</dd>
+                        <dt>Reto</dt>
+                        <dd>Cansancio y conexión</dd>
+                    </dl>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="impacto">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Impacto social</span>
+                <h2>Lo que mejoró y lo que preocupa</h2>
+            </div>
+            <div class="pc">
+                <div class="col pos">
+                    <h3>Impactos positivos</h3>
+                    <div class="pt"><b>Cercanía a distancia</b><span>Las familias separadas por migración o trabajo
+                            conversan y se ven a diario, a bajo costo.</span></div>
+                    <div class="pt"><b>Comunidades y participación</b><span>Personas con intereses o causas en común se
+                            encuentran y se organizan, incluso si viven en países distintos.</span></div>
+                    <div class="pt"><b>Información inmediata</b><span>Las noticias, alertas de emergencia y avisos de
+                            servicios llegan en segundos.</span></div>
+                    <div class="pt"><b>Trabajo y estudio remotos</b><span>La videollamada y los chats permiten colaborar
+                            sin compartir un mismo lugar.</span></div>
+                    <div class="pt"><b>Voz para más personas</b><span>Cualquier persona puede publicar, emprender o dar
+                            a conocer su trabajo sin pasar por un medio tradicional.</span></div>
+                </div>
+                <div class="col neg">
+                    <h3>Riesgos y desafíos</h3>
+                    <div class="pt"><b>Desinformación</b><span>Los rumores y contenidos falsos se difunden con rapidez y
+                            son difíciles de corregir.</span></div>
+                    <div class="pt"><b>Ciberacoso</b><span>El anonimato y la distancia facilitan el hostigamiento, con
+                            efectos graves en adolescentes.</span></div>
+                    <div class="pt"><b>Uso excesivo y salud mental</b><span>Las notificaciones y el desplazamiento
+                            infinito están diseñados para captar atención y pueden afectar el sueño y el ánimo.</span>
+                    </div>
+                    <div class="pt"><b>Burbujas de opinión</b><span>Los algoritmos muestran contenidos similares a los
+                            que ya consumes, lo que reduce la diversidad de puntos de vista.</span></div>
+                    <div class="pt"><b>Privacidad</b><span>Las plataformas recopilan datos personales y de
+                            comportamiento que pueden usarse con fines comerciales o de vigilancia.</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="habitos">
+        <div class="wrap">
+            <div class="section-head"><span class="kicker">Hábitos saludables</span>
+                <h2>Cómo aprovechar la tecnología sin que nos controle</h2>
+            </div>
+            <div class="grid g3">
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M24 6 L38 11 V23 C38 33 31 39 24 42 C17 39 10 33 10 23 V11 Z" />
+                        <path d="M18 24 L23 29 L31 19" />
+                    </svg>
+                    <h3>Verifica antes de compartir</h3>
+                    <p>Revisa quién publica la información, la fecha y si otras fuentes confiables la confirman.</p>
+                </div>
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="24" cy="24" r="17" />
+                        <path d="M24 12 V24 L32 29" />
+                    </svg>
+                    <h3>Pon límites de tiempo</h3>
+                    <p>Desactiva notificaciones que no necesitas y define horarios sin pantalla, sobre todo al dormir.
+                    </p>
+                </div>
+                <div class="card"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="17" cy="16" r="6" />
+                        <circle cx="33" cy="18" r="5" />
+                        <path d="M5 38 C6 28 28 28 29 38 M28 36 C30 29 44 29 44 37" />
+                    </svg>
+                    <h3>Combina lo digital y lo presencial</h3>
+                    <p>La tecnología suma cuando acompaña las relaciones y no las reemplaza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="wrap">
+            <nav class="pager" aria-label="Navegación entre apartados"><a class="prev" href="educacion.html"><small>←
+                        Anterior</small><strong>Educación</strong></a><a class="next" href="index.html"><small>Volver
+                        →</small><strong>Inicio</strong></a></nav>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div>
+                <div class="fb"><span aria-hidden="true">🌍</span>Tecnología y Sociedad</div>
+                <p>Sitio informativo sobre la evolución tecnológica y su impacto en la vida cotidiana y social.</p>
+            </div>
+            <div>
+                <h4>Apartados</h4>
+                <ul>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="desarrollo.html">Desarrollo</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li><a href="educacion.html">Educación</a></li>
+                    <li><a href="comunicacion.html">Comunicación</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Fuentes de consulta</h4>
+                <ul>
+                    <li><a href="https://datareportal.com" rel="noopener" target="_blank">DataReportal, Digital
+                            Report</a></li>
+                    <li><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/default.aspx" rel="noopener"
+                            target="_blank">UIT, estadísticas</a></li>
+                    <li><a href="https://www.unicef.org/innocenti" rel="noopener" target="_blank">UNICEF, niñez y
+                            entorno digital</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
